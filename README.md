@@ -13,7 +13,7 @@ Placeholders and Mixins for PostCSS
 }
 ```
 
-Usage: `@extend clearfix`;
+Usage: `@extend clearfix;`
 
 -----
 
@@ -26,7 +26,7 @@ Usage: `@extend clearfix`;
 }
 ```
 
-Usage: `@extend notext`;
+Usage: `@extend notext;`
 
 -----
 
@@ -38,7 +38,7 @@ Usage: `@extend notext`;
 }
 ```
 
-Usage: `@extend appearanceNone`;
+Usage: `@extend appearanceNone;`
 
 -----
 
@@ -54,7 +54,7 @@ Usage: `@extend appearanceNone`;
 }
 ```
 
-Usage: `@extend centered`;
+Usage: `@extend centered;`
 
 ## Mixins
 
