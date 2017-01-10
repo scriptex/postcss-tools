@@ -21,3 +21,7 @@
 @define-mixin triangle $borderWidth, $borderColor, $margin { width: 0; height: 0; display: inline-block; vertical-align: middle; border-width: $borderWidth; border-style: solid; border-color: $borderColor; margin: $margin; }
 
 /*  Usage: @mixin triangle 5px, #fff transparent transparent transparent, 4px 5px 0 0;  */
+
+@define-mixin letterspacing $tracking { letter-spacing: calc($tracking / 1000)em };
+
+/*  Usage: @mixin letterspacing 32; ** 32 is the tracking set in Photoshop ** */
