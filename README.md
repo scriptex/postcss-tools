@@ -93,3 +93,13 @@ Usage: `@mixin chevron 10px, 0 0 1px 1px, #fff, 0, -45deg, 50% 50%, 0s;`
 ```
 
 Usage: `@mixin triangle 5px, #fff transparent transparent transparent, 4px 5px 0 0;`
+
+-----
+
+@define-mixin letterspacing $tracking { 
+	letter-spacing: calc($tracking / 1000)em 
+};
+
+/*  Usage: @mixin letterspacing 32; */
+
+/*  32 is the tracking set in Photoshop  */
