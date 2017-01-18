@@ -14,7 +14,7 @@
 
 /*  Usage: @extend centered;  */
 
-@define-mixin chevron $dimensions, $borderWidth, $borderColor, $margin, $rotation, $origin, $transitionDuration { content: ''; width: $dimensions; height: $dimensions; display: inline-block; vertical-align: middle; border-width: 0 0 $borderWidth $borderWidth; border-style: solid; border-color: $borderColor; margin: $margin; transform: rotate($rotation); transform-origin: $origin; transition: transform $transitionDuration; }
+@define-mixin chevron $dimensions, $borderWidth, $borderColor, $margin, $rotation, $origin, $transitionDuration { content: ''; width: $dimensions; height: $dimensions; display: inline-block; vertical-align: middle; border-width: 0 0 $borderWidth $borderWidth; border-style: solid; border-color: transparent transparent $borderColor $borderColor; margin: $margin; transform: rotate($rotation); transform-origin: $origin; transition: transform $transitionDuration; }
 
 /*  Usage: @mixin chevron 10px, 1px, red, 0, -45deg, 50% 50%, 0s;  */
 
