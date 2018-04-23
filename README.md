@@ -108,7 +108,7 @@ Usage: `@mixin triangle 5px, #fff transparent transparent transparent, 4px 5px 0
 }
 ```
 
-Usage: @mixin letterspacing 32; // 32 is the tracking set in Photoshop
+Usage: `@mixin letterspacing 32; // 32 is the tracking set in Photoshop`
 
 ## LICENSE
 
