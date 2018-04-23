@@ -4,7 +4,7 @@ Placeholders and Mixins for PostCSS
 
 ## Placeholders
 
-```
+```css
 @define-placeholder clearfix {
 	content: '';
 	line-height: 0;
@@ -17,7 +17,7 @@ Usage: `@extend clearfix;`
 
 ---
 
-```
+```css
 @define-placeholder notext {
 	white-space: nowrap;
 	text-indent: 100%;
@@ -30,7 +30,7 @@ Usage: `@extend notext;`
 
 ---
 
-```
+```css
 @define-placeholder appearanceNone {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -42,7 +42,7 @@ Usage: `@extend appearanceNone;`
 
 ---
 
-```
+```css
 @define-placeholder centered {
 	display: block;
 	position: absolute;
@@ -58,8 +58,14 @@ Usage: `@extend centered;`
 
 ## Mixins
 
-```
-@define-mixin chevron $dimensions, $borderWidth, $borderColor, $margin, $rotation, $origin, $transitionDuration {
+```css
+@define-mixin chevron $dimensions,
+	$borderWidth,
+	$borderColor,
+	$margin,
+	$rotation,
+	$origin,
+	$transitionDuration {
 	content: '';
 	width: $dimensions;
 	height: $dimensions;
@@ -79,7 +85,7 @@ Usage: `@mixin chevron 10px, 0 0 1px 1px, #fff, 0, -45deg, 50% 50%, 0s;`
 
 ---
 
-```
+```css
 @define-mixin triangle $borderWidth, $borderColor, $margin {
 	width: 0;
 	height: 0;
@@ -96,12 +102,13 @@ Usage: `@mixin triangle 5px, #fff transparent transparent transparent, 4px 5px 0
 
 ---
 
+```css
 @define-mixin letterspacing $tracking {
-letter-spacing: calc($tracking / 1000)em
-};
+	letter-spacing: calc($tracking / 1000)em;
+}
+```
 
-/_ Usage: @mixin letterspacing 32; _/
-/_ 32 is the tracking set in Photoshop _/
+Usage: @mixin letterspacing 32; // 32 is the tracking set in Photoshop
 
 ## LICENSE
 
