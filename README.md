@@ -1,8 +1,16 @@
 # PostCSS Tools
 
-Placeholders and Mixins for PostCSS
+An opinionated and extendable collection of placeholders and mixins for PostCSS
 
-## Placeholders
+## Details
+
+If you are not familiar with PostCSS, you might want to check the following links for more details about the purpose and usage of this package:
+
+* [PostCSS](https://github.com/postcss/postcss)
+* [PostCSS-Simple-Extend](https://github.com/davidtheclark/postcss-simple-extend)
+* [PostCSS Mixins](https://github.com/postcss/postcss-mixins)
+
+## Placeholders (Extends)
 
 ```css
 @define-placeholder clearfix {
