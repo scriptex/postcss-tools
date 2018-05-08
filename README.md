@@ -23,7 +23,7 @@ If you are not familiar with PostCSS, you might want to check the following link
 
 ## Placeholders (Extends)
 
-```css
+```postcss
 @define-placeholder clearfix {
 	content: '';
 	line-height: 0;
