@@ -36,7 +36,7 @@ Usage: `@extend clearfix;`
 
 ---
 
-```css
+```postcss
 @define-placeholder notext {
 	white-space: nowrap;
 	text-indent: 100%;
@@ -49,7 +49,7 @@ Usage: `@extend notext;`
 
 ---
 
-```css
+```postcss
 @define-placeholder appearanceNone {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -61,7 +61,7 @@ Usage: `@extend appearanceNone;`
 
 ---
 
-```css
+```postcss
 @define-placeholder centered {
 	display: block;
 	position: absolute;
@@ -77,34 +77,35 @@ Usage: `@extend centered;`
 
 ## Mixins
 
-```css
-@define-mixin chevron $dimensions,
+```postcss
+@define-mixin chevron 
+	$dimensions,
 	$borderWidth,
 	$borderColor,
 	$margin,
 	$rotation,
 	$origin,
 	$transitionDuration {
-	content: '';
-	width: $dimensions;
-	height: $dimensions;
-	display: inline-block;
-	vertical-align: middle;
-	border-width: $borderWidth;
-	border-style: solid;
-	border-color: $borderColor;
-	margin: $margin;
-	transform: rotate($rotation);
-	transform-origin: $origin;
-	transition: transform $transitionDuration;
-}
+		content: '';
+		width: $dimensions;
+		height: $dimensions;
+		display: inline-block;
+		vertical-align: middle;
+		border-width: $borderWidth;
+		border-style: solid;
+		border-color: $borderColor;
+		margin: $margin;
+		transform: rotate($rotation);
+		transform-origin: $origin;
+		transition: transform $transitionDuration;
+	}
 ```
 
 Usage: `@mixin chevron 10px, 0 0 1px 1px, #fff, 0, -45deg, 50% 50%, 0s;`
 
 ---
 
-```css
+```postcss
 @define-mixin triangle $borderWidth, $borderColor, $margin {
 	width: 0;
 	height: 0;
@@ -121,7 +122,7 @@ Usage: `@mixin triangle 5px, #fff transparent transparent transparent, 4px 5px 0
 
 ---
 
-```css
+```postcss
 @define-mixin letterspacing $tracking {
 	letter-spacing: calc($tracking / 1000)em;
 }
