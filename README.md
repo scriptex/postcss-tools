@@ -16,7 +16,7 @@ If you are not familiar with PostCSS, you might want to check the following link
 
 ## Placeholders (Extends)
 
-```postcss
+```css
 @define-placeholder clearfix {
 	content: '';
 	line-height: 0;
@@ -29,7 +29,7 @@ Usage: `@extend clearfix;`
 
 ---
 
-```postcss
+```css
 @define-placeholder notext {
 	white-space: nowrap;
 	text-indent: 100%;
@@ -42,7 +42,7 @@ Usage: `@extend notext;`
 
 ---
 
-```postcss
+```css
 @define-placeholder appearanceNone {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -54,7 +54,7 @@ Usage: `@extend appearanceNone;`
 
 ---
 
-```postcss
+```css
 @define-placeholder centered {
 	display: block;
 	position: absolute;
@@ -70,7 +70,7 @@ Usage: `@extend centered;`
 
 ## Mixins
 
-```postcss
+```css
 @define-mixin chevron 
 	$dimensions,
 	$borderWidth,
@@ -98,7 +98,7 @@ Usage: `@mixin chevron 10px, 0 0 1px 1px, #fff, 0, -45deg, 50% 50%, 0s;`
 
 ---
 
-```postcss
+```css
 @define-mixin triangle $borderWidth, $borderColor, $margin {
 	width: 0;
 	height: 0;
@@ -115,7 +115,7 @@ Usage: `@mixin triangle 5px, #fff transparent transparent transparent, 4px 5px 0
 
 ---
 
-```postcss
+```css
 @define-mixin letterspacing $tracking {
 	letter-spacing: calc($tracking / 1000)em;
 }
